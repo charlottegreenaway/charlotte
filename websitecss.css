@@ -252,19 +252,6 @@ footer {
   padding: 0;
 }
 
-.footer-section form input,
-.footer-section form textarea {
-  margin-bottom: 10px;
-  width: 100%;
-  padding: 10px;
-}
-
-.footer-section form button {
-  background: #444;
-  color: #fff;
-  padding: 10px;
-  border: none;
-}
 
 .footer-bottom {
   background: #222;
