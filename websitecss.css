@@ -1,0 +1,298 @@
+h1{
+	font-family: helvetica, sans-serif;
+	color: black;
+	font-size: 50px;
+}
+p1{
+	font-family: arial, helvetica, sans-serif;
+	color: #4f4e4d;
+	font-size: 18px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+/*header*/
+* {
+  padding: 0px;
+  margin: 0px;
+  transition: 0.5 s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  background-color: #f58c0c;
+  color: white;
+  height: 20vh;
+}
+nav .links {
+  display: flex;
+}
+.links p {
+  padding: 10px;
+}
+#mobile-menu-btn {
+  display: none;
+  color:#4f4e4d;
+}
+.mobile-menu {
+  color: black;
+  display: none;
+  position: absolute;
+  right: 0;
+  height: 60vh;
+  width: 70vw;
+  background-color: #f58c0c;
+  z-index: 1;
+}
+@media (max-width: 600px) {
+  #mobile-menu-btn {
+    display: block;
+	color: #4f4e4d;
+  }
+  nav p {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+
+
+
+#aboutme{
+	background-color: lightgrey;
+   
+    margin-top: 20px;
+	margin-bottom:20px;
+	line-height:160%;
+
+}
+.roundbox{
+  border-radius: 25px;
+  background: white;
+  padding: 60px;
+  margin-left: 20px;
+  margin-right:20px;
+  
+}
+.roundbox li{
+	  color: blue;
+	  line-height:200%;
+	  margin-left:30px;
+}
+.roundbox p{
+	line-height:200%;
+	margin-left:30px;
+}
+body{
+        background-color: #f2f2f2;
+        font-size: 16px;
+      }
+      /* Adding styles to the table */
+table {
+        border-collapse: collapse;
+        width: 55%;
+        margin: 10px auto;
+        font-family: Arial, sans-serif;
+}
+
+
+      
+      th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 12px;
+      }
+      
+      th {
+        background-color: #dddddd;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 15px;
+      }
+      /* Adding styles to the cells with results */
+      .result {
+        color: green;
+        font-weight: bold;
+      }
+       /* Adding styles to cells with "N/A" */
+      .na {
+        color: #cccccc;
+        font-weight: normal;
+      }
+  .box {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px #cccccc;
+		margin-left: 10px;
+        margin-right:10px;
+		margin-bottom:60px
+      }
+
+
+
+h2{
+	color:black;
+	font-size: 29px;
+	margin-bottom: 20px
+}
+
+p{
+	line-height:200%
+	
+}
+
+img {
+    max-width: 45%;
+}
+
+@media (min-width: 768px) {
+    img {
+        max-width: 17%;
+    }
+}
+
+
+
+
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-section h3 {
+  margin: 0 0 10px 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section form input,
+.footer-section form textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.footer-section form button {
+  background: #444;
+  color: #fff;
+  padding: 10px;
+  border: none;
+}
+
+.footer-bottom {
+  background: #222;
+  color: #ccc;
+  padding: 10px;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
