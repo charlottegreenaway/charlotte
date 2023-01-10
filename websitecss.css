@@ -159,10 +159,10 @@ body{
       /* Adding styles to the table */
 table {
         border-collapse: collapse;
-        width: 55%;
+        width: 45%;
         margin: 10px auto;
         font-family: Arial, sans-serif;
-	float:left;
+	
 }
 
 
