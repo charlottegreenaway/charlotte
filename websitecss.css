@@ -303,3 +303,53 @@ footer {
   overflow: hidden;
   background-color: #f1f1f1;
 }
+#guessinggame{
+	background-color: white;
+   
+    margin-top: 20px;
+	margin-bottom:20px;
+	line-height:160%;
+	margin-left:70px;
+	margin-right:70px;
+	
+}
+nav .links .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+nav .links .dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #f58c0c;
+}
+
+nav .links .dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+nav .links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .mobile-menu .dropdown {
+    position: static;
+    display: block;
+  }
+
+  .mobile-menu .dropdown-content {
+    display: none;
+    position: static;
+    background-color: #f58c0c;
+    margin-top: 20px;
+  }
+
+  .mobile-menu .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}

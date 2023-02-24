@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+	<link rel="stylesheet" href="websitecss.css">
+	<script src="index.js" defer></script>
+<header>
+<title>GuessTheNumber</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <nav>
+  <div class="logo">
+    <h1 style="color:#4f4e4d"> Charlotte Greenaway</h1> <p1> Computer Science Student </p1>
+  </div>
+  <div class="links">
+    <strong id="mobile-menu-btn" style="text-decoration:none; color:white;">Menu</strong>
+    <p><a href="index.html" style="text-decoration:none;">Home</a></p>
+    <p><a href="https://charlotte-greenaway.com/index.html#aboutme" style="text-decoration:none;">About Me</a></p>
+    <p><a href="https://charlotte-greenaway.com/index.html#skills" style="text-decoration:none;">Skills</a></p>
+    <p><a href="https://charlotte-greenaway.com/index.html#certifications" style="text-decoration:none;">Certifications</a></p>
+    <div class="dropdown">
+      <p class="dropbtn">Portfolio</p>
+      <div class="dropdown-content">
+        <a href="guessnumber.html"style="color:black">Guessing Number Game</a>
+        <a href="#"style="color:black">Project 2</a>
+        <a href="#"style="color:black">Project 3</a>
+      </div>
+    </div>
+    <p><a href="resume.html" style="text-decoration:none;">Resume</a></p>
+    <p><a href="contact.html" style="text-decoration:none;">Contact</a></p>
+  </div>
+	  
+</nav>
+
+<!-- Small Screen Navigation Bar -->
+<div class="mobile-menu">
+  <p><a href="index.html" style="text-decoration:none;">Home</a></p>
+  <p><a href="https://charlotte-greenaway.com/index.html#aboutme" style="text-decoration:none;">About Me</a></p>
+  <p><a href="https://charlotte-greenaway.com/index.html#skills" style="text-decoration:none;">Skills</a></p>
+  <p><a href="https://charlotte-greenaway.com/index.html#certifications" style="text-decoration:none;">Certifications</a></p>
+  <div class="dropdown">
+    <p class="dropbtn">Portfolio</p>
+    <div class="dropdown-content">
+      <a href="#">Project 1</a>
+      <a href="#">Project 2</a>
+      <a href="#">Project 3</a>
+    </div>
+  </div>
+  <p><a href="resume.html" style="text-decoration:none;">Resume</a></p>
+  <p><a href="contact.html" style="text-decoration:none;">Contact</a></p>
+  <strong id="mobile-menu-btn" style="text-decoration:none;">Menu</strong>
+</div>
+
+<style>
+  a:link {
+    color: #4f4e4d;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #4f4e4d;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: grey;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropbtn {
+    color: #4f4e4d;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .dropdown-content a {
+    color: #4f4e4d;
+    background-color: white;
+    text-decoration: none;
+    display:
+</style>
+
+
+
+
+</header>
+
+
+
+
+<body id="gamebg" >
+<div id="guessinggame" style="padding-bottom:60px">
+	<h2><center>Guess The Number!</center></h2>
+	<center><div id="guessupto"></div></center>
+	
+	<div id="guessinput" style="margin-bottom:40px; position:relative">
+		<center><input type="text" id="userguess" style="height:200px; width:200px; font-size:100px; text-align:center; border: 3px dashed; background-color:light grey; z-index: 1;position:relative;"></input></center>
+		<hr style="position: absolute; top: 50%; left: 0; width: 100%; border: none; border-top: 2px solid #ccc; z-index: 0;border-top: 3px dashed black;">
+		<center><input type="submit" onclick="isGuessRight(randomnumberactual,input1())"></input></center>
+		<center><div id="result"></div></center>
+	</div>
+	<div id="resetrandom" style="position:relative; display:inline-block" ">
+		<br>
+		<input type="submit" id="refreshrandombtn"  onclick="refreshrandom()"></input><br>
+	</div>
+	<div id="settings" style="float:right" >
+		<label>Select the range you would like to guess up to:</label><br>
+		<input type="range" max="100" min="5" id="slider" step="5" ></input>
+		<div id="slidervalue" style="display: inline-block"></div><br>
+	</div>
+	
+
+
+</div>
+
+</body>
+<script src="guessnumber.js"></script>
+
+
+<footer>
+ <div class="footer-content">
+    <div class="footer-section about">
+      <h3>Contact</h3>
+      <ul>
+		<li> <a href="mailto:charlottegreenaway112@gmail.com">Email</a></li>
+		<li style="color:#fff"> 07802 767605</li>
+		<li><a href="https://www.linkedin.com/in/charlotte-greenaway-777140183/">LinkedIn</a></li>
+	  </ul>
+    </div>
+    <div class="footer-section links">
+      <h3>Quick links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://charlotte-greenaway.com/index.html#aboutme">About</a></li>
+        <li><a href="https://charlotte-greenaway.com/index.html#skills">Skills</a></li>
+        <li><a href="https://charlotte-greenaway.com/index.html#certifications">Certifications</a></li>
+		<li><a href="resume.html">Resume</a></li>
+		<li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; charlotte-greenaway.com | Designed by Charlotte Greenaway
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</footer>
+<script>
+	history.pushState(null, null, 'Guessnumbergame');
+
+</script>
+
+</html>
+
+
