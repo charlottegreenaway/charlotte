@@ -55,7 +55,7 @@ nav .links {
   height: 60vh;
   width: 70vw;
   background-color: #f58c0c;
-  z-index: 1;
+  z-index: 3;
   border: 1px black;
   
 }
