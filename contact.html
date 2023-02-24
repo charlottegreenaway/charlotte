@@ -49,22 +49,45 @@
   <strong id="mobile-menu-btn" style="text-decoration:none;">Menu</strong>
 </div>
 <style>
-	a:link {
-		color: #4f4e4d;
-		background-color: transparent;
-		text-decoration: none;
-    }
-	a:visited {
-		color: #4f4e4d;
-		background-color: transparent;
-		text-decoration: none;
-    }
-	a:hover {
-		color: grey;
-		background-color: transparent;
-		text-decoration: underline;
-    }
-	
+  a:link {
+    color: #4f4e4d;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #4f4e4d;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: grey;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropbtn {
+    color: #4f4e4d;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .dropdown-content a {
+    color: #4f4e4d;
+    background-color: white;
+    text-decoration: none;
+    display:
 </style>
 
 
