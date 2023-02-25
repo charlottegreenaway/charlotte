@@ -354,3 +354,31 @@ nav .links .dropdown:hover .dropdown-content {
     display: block;
   }
 }
+#quizgame{
+	margin-bottom:20px;
+	margin-top:20px;
+	margin-left:25px;
+	margin-right:25px;
+	background-color:white;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+#currquest{
+	border: 4px solid blue;
+    border-radius: 20px;
+	padding:30px;
+	margin:10px;
+}
+#currquest h4:last-of-type::after {
+  content: "";
+  display: block;
+  margin-top: 10px; /* Adjust as needed */
+  border-top: 1.75px solid blue; /* Set the border properties */
+}
+#currquest input[type="submit"] {
+	background-color:pink;
+	border:pink;
+	border-radius:4px;
+	padding:4px;
+	margin-top:10px;
+}
