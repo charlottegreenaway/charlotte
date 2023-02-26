@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 
-	<link rel="stylesheet" href="websitecss.css">
-	<script src="index.js" defer></script>
-<header>
-<title>GuessTheNumber</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <nav>
+<link rel="stylesheet" href="websitecss.css">
+<script src="index.js" defer></script>
+<header>
+<title>CarGame</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<nav>
   <div class="logo">
     <h1 style="color:#4f4e4d"> Charlotte Greenaway</h1> <p1> Computer Science Student </p1>
   </div>
@@ -93,43 +94,46 @@
 
 
 
-
 </header>
+<body>
 
-
-
-
-<body id="gamebg" >
-<div id="guessinggame" style="padding-bottom:60px">
-	<h2><center>Guess The Number!</center></h2>
-	<center><div id="guessupto"></div></center>
-	
-	<div id="guessinput" style="margin-bottom:40px; position:relative">
-		<center><input type="text" id="userguess" style="height:200px; width:200px; font-size:100px; text-align:center; border: 3px dashed; background-color:light grey; z-index: 1;position:relative;"></input></center>
-		<hr style="position: absolute; top: 50%; left: 0; width: 100%; border: none; border-top: 2px solid #ccc; z-index: 0;border-top: 3px dashed black;">
-		<center><input type="submit" onclick="isGuessRight(randomnumberactual,input1())"></input></center>
-		<center><div id="result"></div></center>
+<div id="popup-container">
+		<div id="popup-box">
+			<h1>The Parcel Game</h1>
+			<p>Use the arrow keys to move the car.<br>Pick up as many parcels as you can in 30 seconds<br> Press "H" to honk the horn<br>Click the button to start</p>
+			<button id="start-button" onclick="starttimer()">Start</button>
+		</div>
 	</div>
-	<div id="resetrandom" style="position:relative; display:inline-block" ">
-		<br>
-		<input type="submit" id="refreshrandombtn"  onclick="refreshrandom()"></input><br>
-	</div>
-	<div id="settings" style="float:right" >
-		<label>Select the range you would like to guess up to:</label><br>
-		<input type="range" max="100" min="5" id="slider" step="5" ></input>
-		<div id="slidervalue" style="display: inline-block"></div><br>
-	</div>
-	
+
+
+
+<center><h2>Parcel Game <button onclick="location.reload()" id="retry">Retry</button></h2></center>
+<center><p style="display: inline-block">Parcels Collected:<div id="parcelscollected"style="display: inline-block"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Time Remaining:<div id="timeremaining" style="display: inline-block"></div></p></center>
+<div id="cargame">
+
+<center><canvas  id="myCanvas" width="1000" height="500" style="border:1px solid #000000;display: inline-block">
+Your browser does not support the HTML canvas tag.
+</canvas></center>
+
+
 
 
 </div>
 
 </body>
-<script src="guessnumber.js"></script>
+
+
+
+
+
+
+
+
+
 
 
 <footer>
- <div class="footer-content">
+  <div class="footer-content">
     <div class="footer-section about">
       <h3>Contact</h3>
       <ul>
@@ -164,9 +168,14 @@
 
 
 
+
+
+
+
+
+
+
+
 </footer>
-
-
+<script src="cargame.js"></script>
 </html>
-
-

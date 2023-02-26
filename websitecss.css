@@ -382,3 +382,41 @@ nav .links .dropdown:hover .dropdown-content {
 	padding:4px;
 	margin-top:10px;
 }
+#cargame canvas{
+	background-image: url("racetrack.png");
+	background-size: cover;
+}
+
+
+#popup-container {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 999;
+		}
+
+/* Style the pop-up box */
+#popup-box {
+	position:absolute;
+	top: calc(50% - 100px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+#retry{
+	border-radius:5px;
+	margin-left:20px;
+	padding:5px;
+	background-color:pink;
+}
