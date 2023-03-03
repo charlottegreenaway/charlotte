@@ -1,17 +1,41 @@
 <!DOCTYPE html>
-<html>
-
+<html >
+  <header>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="websitecss.css">
-<script src="index.js" defer></script>
-<header><title>Home</title>
+
+<title>Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <nav>
-  <div class="logo">
-    <h1 style="color:#4f4e4d"> Charlotte Greenaway</h1> <p1> Computer Science Student </p1>
-  </div>
-  <div class="links">
-    <strong id="mobile-menu-btn" style="text-decoration:none; color:white;">Menu</strong>
+ 
+
+</header>
+<body>
+  <nav>
+    <div class="logo">
+      <h1 style="color:#4f4e4d"> Charlotte Greenaway </h1> <p1> Computer Science Student </p1>
+    </div>
+    <div class="links">
+      <strong id="mobile-menu-btn" style="text-decoration:none; color:rgb(17, 14, 14);">Menu</strong>
+      <p><a href="index.html" style="text-decoration:none;">Home</a></p>
+      <p><a href="#aboutme" style="text-decoration:none;">About Me</a></p>
+      <p><a href="#skills" style="text-decoration:none;">Skills</a></p>
+      <p><a href="#certifications" style="text-decoration:none;">Certifications</a></p>
+      <div class="dropdown">
+        <p class="dropbtn">Portfolio</p>
+        <div class="dropdown-content">
+          <a href="guessnumber.html"style="color:black">Guessing Number Game</a>
+          <a href="quiz.html"style="color:black">Dog Quiz</a>
+          <a href="cargame.html"style="color:black">Parcel Game</a>
+        </div>
+      </div>
+      <p><a href="resume.html" style="text-decoration:none;">Resume</a></p>
+      <p><a href="contact.html" style="text-decoration:none;">Contact</a></p>
+    </div>
+   
+  </nav>
+  
+  <!-- Small Screen Navigation Bar -->
+  <div class="mobile-menu">
     <p><a href="index.html" style="text-decoration:none;">Home</a></p>
     <p><a href="#aboutme" style="text-decoration:none;">About Me</a></p>
     <p><a href="#skills" style="text-decoration:none;">Skills</a></p>
@@ -19,92 +43,72 @@
     <div class="dropdown">
       <p class="dropbtn">Portfolio</p>
       <div class="dropdown-content">
-        <a href="guessnumber.html"style="color:black">Guessing Number Game</a>
-        <a href="quiz.html"style="color:black">Dog Quiz</a>
-        <a href="cargame.html"style="color:black">Parcel Game</a>
+        <a href="guessnumber.html">Guessing Number Game</a>
+        <a href="quiz.html">Dog Quiz</a>
+        <a href="cargame.html">Parcel Game</a>
       </div>
     </div>
     <p><a href="resume.html" style="text-decoration:none;">Resume</a></p>
     <p><a href="contact.html" style="text-decoration:none;">Contact</a></p>
+    <strong id="mobile-menu-btn" style="text-decoration:none;">Menu</strong>
   </div>
-	  
-</nav>
+  
+  <style>
+    a:link {
+      color: #4f4e4d;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:visited {
+      color: #4f4e4d;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    a:hover {
+      color: grey;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropbtn {
+      color: #4f4e4d;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .dropdown-content a {
+      color: #4f4e4d;
+      background-color: white;
+      text-decoration: none;
+      display:
+  </style>
 
-<!-- Small Screen Navigation Bar -->
-<div class="mobile-menu">
-  <p><a href="index.html" style="text-decoration:none;">Home</a></p>
-  <p><a href="#aboutme" style="text-decoration:none;">About Me</a></p>
-  <p><a href="#skills" style="text-decoration:none;">Skills</a></p>
-  <p><a href="#certifications" style="text-decoration:none;">Certifications</a></p>
-  <div class="dropdown">
-    <p class="dropbtn">Portfolio</p>
-    <div class="dropdown-content">
-      <a href="guessnumber.html">Guessing Number Game</a>
-      <a href="quiz.html">Dog Quiz</a>
-      <a href="cargame.html">Parcel Game</a>
-    </div>
-  </div>
-  <p><a href="resume.html" style="text-decoration:none;">Resume</a></p>
-  <p><a href="contact.html" style="text-decoration:none;">Contact</a></p>
-  <strong id="mobile-menu-btn" style="text-decoration:none;">Menu</strong>
-</div>
 
-<style>
-  a:link {
-    color: #4f4e4d;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:visited {
-    color: #4f4e4d;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:hover {
-    color: grey;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .dropbtn {
-    color: #4f4e4d;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  .dropdown-content a {
-    color: #4f4e4d;
-    background-color: white;
-    text-decoration: none;
-    display:
-</style>
-
-</header>
-<body>
 <div class="fade-in">
-<div id="aboutme" style="margin-left:20px" style="margin-right:20px">
+<div id="containerhome">
+<div id="aboutme">
 <a name="aboutme"></a>
-<br><br>
+
 <h2>&nbsp;About Me</h2><title>About Me</title>
 <img src="profilepic.png" style="float:right">
-<p> As a highly motivated and ambitious individual with a passion for software development, I am constantly seeking opportunities to grow my skills and knowledge in the field of computer science. I hold certifications in C, HTML, CSS, and C++, and have extensive experience in Python. I am currently pursuing a part-time degree in computing with electronic engineering, where I am focusing on software engineering and object-oriented programming in Java.<br><br>
-
-In addition to my technical skills, I am a highly analytical problem-solver who excels at quickly learning new technologies and concepts. In my spare time, I enjoy working on personal projects with my Raspberry Pi, which allows me to continue exploring my interests in software development.<br><br>
-
-I am confident that my combination of technical expertise and problem-solving skills make me an ideal candidate for any software development position.</p>
-<BR><BR><BR>
+<p> As a highly motivated and ambitious tech ops executive with a passion for programming, I'm always seeking opportunities to grow my skills and knowledge in computer science. I have expertise in javascript, HTML, and CSS, and I'm currently learning C++ and C# in my spare time. I'm also pursuing a BSc in computing with electronic engineering, where I'm focusing on developing my software engineering and object-oriented programming skills.</p>
+<br>
+<p>I'm a highly analytical problem-solver who excels at quickly learning new technologies and concepts. I'm always seeking new challenges to push my boundaries and expand my skillset. In my spare time, I enjoy working on projects with my Raspberry Pi, which allows me to continue exploring my interests in software development.
+<br>
+<p>With my technical expertise and problem-solving skills, I'm confident that I would be an ideal candidate for any software development position.</p>
+</div>
 <div class="roundbox">
 <h2>&nbsp;&nbsp;&nbsp;&nbsp;Skills</h2>
 <title>Skills</title><a name="skills"></a>
@@ -113,16 +117,16 @@ I am confident that my combination of technical expertise and problem-solving sk
 		<p>gained from software researching, I had to organise my research in a clear structured way so others could under stand.</p>
 		<li>Microsoft Office</li>
 		<p>use of word, excel spreadsheets and other microsoft applications through being an accounts assistant. Knowledge on how to use spreadsheet formula specifically.</p>
-		<li>Python</li>
-		<p>Self-taught and GCSE certificate</p>
-		<li>HTML,CSS and Javascript</li>
-		<p>personal practise, certificates and this website!</p>
+		<li>Python and Micro Python</li>
+		<p>Learning through use of raspberry-pi, previous GCSE course and self teaching.</p>
+		<li>Web Development Skills</li>
+		<p>Ongoing learning and current experience in HTML, CSS, javascript and bootstrap.</p>
 		<li>Communication skills</li>
 		<p>through constant contact with customers and colleagues.</p>
-		<li>C/C++ fundamentals</li>
-		<p>Self taught and certificates</p>
+		<li>C/C++ with Unity/UE </li>
+		<p>On-going learning and strong interest in game development</p>
 		<li>Problem Solving</li>
-		<p>Identifying, understanding, and solving problems in my own code.</p>
+		<p>Identifying, understanding, and solving problems in my own code and through implementing ad tech code to websites.</p>
 	</ul>
 
 
@@ -131,11 +135,15 @@ I am confident that my combination of technical expertise and problem-solving sk
 
 <div class="qual">
 <div class="box"style="margin-top:40px">
-<h2 style="margin-top:60px">Certifications</h2><a name="certifications"></a><title>Certifications</title>
+<h2 style="margin-top:60px; padding-left:6%">Certifications</h2><a name="certifications"></a><title>Certifications</title>
  <table >
       <tr>
         <th>Qualification/<br>Certificate</th>
         <th >Result</th>
+      </tr>
+      <tr>
+        <td>BSc Computing with Electronic Engineering</td>
+        <td class="result">Ongoing, current module prediction: Distinction</td>
       </tr>
       <tr>
         <td>GCSE Mathematics</td>
@@ -191,7 +199,7 @@ I am confident that my combination of technical expertise and problem-solving sk
       <h3>Contact</h3>
       <ul>
 		<li> <a href="mailto:charlottegreenaway112@gmail.com">Email</a></li>
-		<li style="color:#fff"> 07802 767605</li>
+		<li> 07802 767605</li>
 		<li><a href="https://www.linkedin.com/in/charlotte-greenaway-777140183/">LinkedIn</a></li>
 	  </ul>
     </div>
@@ -210,7 +218,7 @@ I am confident that my combination of technical expertise and problem-solving sk
   <div class="footer-bottom">
     &copy; charlotte-greenaway.com | Designed by Charlotte Greenaway
   </div>
-
+  <script src="index.js" defer></script>
 
 
 

@@ -35,6 +35,7 @@ nav {
   background-color: #f58c0c;
   color: white;
   height: 20vh;
+  
 }
 nav .links {
   display: flex;
@@ -44,7 +45,7 @@ nav .links {
 }
 #mobile-menu-btn {
   display: none;
-  color:#4f4e4d;
+  color:#1d1c1b;
   
 }
 .mobile-menu {
@@ -60,7 +61,7 @@ nav .links {
   position:relative;
   
 }
-@media (max-width: 600px) {
+@media (max-width: 785px) {
   #mobile-menu-btn {
     display: block;
 	color: #4f4e4d;
@@ -77,6 +78,12 @@ nav .links {
 	border: 1px black;
 	
   }
+ 
+ 
+}
+.logo{
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 
@@ -132,16 +139,20 @@ nav .links {
 }
 }
 
-
-
 #aboutme{
+  margin-bottom: 4%;
+  padding:1%;
+}
+
+#containerhome{
 	background-color: lightgrey;
    
     margin-top: 20px;
 	margin-bottom:20px;
 	line-height:160%;
-	margin-left:7px;
-	margin-right:7px;
+	margin-left:1%; 
+  margin-right:1%;
+  padding-top:4%
 
 }
 .roundbox{
@@ -176,7 +187,7 @@ table {
     table {
         border-collapse: collapse;
         max-width: 30%;
-        margin: 10px auto;
+        margin-left:-5% ;
         font-family: Arial, sans-serif;
     }
 }
@@ -276,7 +287,9 @@ footer {
   padding: 10px;
 }
 
-
+.footer-section li{
+  color:#4f4e4d;
+}
 
 
 /* Style the button that is used to open and close the collapsible content */
@@ -297,7 +310,7 @@ footer {
   background-color: #ccc;
 }
 
-/* Style the collapsible content. Note: hidden by default */
+/* Style the collapsible content. Note: hidden by default THIS is for resume */
 .content {
   padding: 0 18px;
   display: none;
@@ -419,4 +432,8 @@ nav .links .dropdown:hover .dropdown-content {
 	margin-left:20px;
 	padding:5px;
 	background-color:pink;
+}
+
+body{
+  width= window.innerWidth;
 }
